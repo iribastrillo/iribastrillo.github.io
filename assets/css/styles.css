@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Prompt:wght@100;400;700;800&display=swap');
+
+
+:root {
+    --main-darkest: #202F60;
+    --main-base: #2D3E75;
+    --main-light: #3B509B;
+    --main-lightest: #586EBB;
+    --main-bg-color: #3b509b;
+    --main-font-fg: #e7e7e7;
+    --highlight-color: #FFD600;
+  }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+    font-size: 16;
+    letter-spacing: 0.07rem;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-light);
+    color: var(--main-font-fg);
+    margin: 10px;
+}
+
+p, label {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+/* NAV */
+
+header {
+    position: fixed;
+    width: calc(100% - 20px);
+    z-index: 1000;
+}
+
+nav {
+    background-color: var(--main-base);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+nav.mobile div {
+    display: flex;
+}
+
+nav.mobile div a {
+    margin-left: 10px;
+}
+
+nav.mobile ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.mobile ul li {
+    list-style: none;
+}
+
+nav.mobile button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* END NAV */
+
+/* HERO */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-base);
+    padding: 10px 10px 10px 7rem;
+    border-radius: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+#hero span {
+    font-size: 1rem;
+}
+
+#hero h1 {
+    margin: 0;
+    color: var(--highlight-color);
+    font-size: 3.5rem;
+}
+
+#hero h2 {
+    font-size: 2rem;
+}
+
+#hero .hero-scroll {
+    position: relative;
+}
+
+#hero .img-prompt {
+    margin: 10px 0;
+}
+
+#hero .img-cursor {
+    margin: 10px 24px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@media only screen and (max-width:500px) {
+    #hero {
+        padding: 10px 10px 10px 3.5rem;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    #hero {
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* END HERO */
+
+/* CONTENT */
+
+#content header {
+    position: static;
+    width: auto;
+    display: inline-block;
+}
+
+#content h1 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px;
+}
+
+#content header {
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#content span {
+    padding: 10px;
+}
+
+#content div {
+    background-color: var(--primary-color);
+    border-radius: 0 10px 10px 10px;
+    padding: 10px;
+}
+
+/* END CONTENT */
+
+/* SKILLS */
+
+#skills {
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+#skills h2 {
+    margin: 24px 0 10px 24px;
+    font-size: 1.5rem;
+}
+
+.sticker {
+    border: 2px solid var(--main-base);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex: 1;
+    box-shadow: 4px 4px var(--main-darkest);
+    transition: all 0.2s ease-in-out;
+}
+
+.sticker:hover {
+    background-color: var(--main-lightest);
+}
+
+/* END SKILLS */
+
+/* CONTACT */
+
+#contact {
+    background-color: var(--main-base);
+    border-radius: 10px;
+    padding: 10px 7rem;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: left;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div:hover {
+    color: var(--highlight-color);
+}
+
+form label {
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="text"], input[type="email"] {
+    background-color: transparent;
+    color: var(--main-font-fg);
+    padding: 5px;
+    border: 2px solid var(--main-bg-color);
+    transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+    border: 2px solid var(--highlight-color);
+}
+
+input:focus {
+    border: 2px solid var(--highlight-color);
+}
+
+input[type="button"] {
+    cursor: pointer;
+    background-color: var(--main-font-fg);
+    color: var(--main-bg-color);
+    font-size: 0.7rem;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 8px var(--main-light);
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    font-size: 0.6rem;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="button"]:hover {
+    box-shadow: 0px 8px var(--main-lightest);
+    color: var(--main-lightest);
+} 
+
+/* END CONTACT */
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: var(--main-font-fg);
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer b {
+    color: var(--highlight-color);
+}
+
+/* END FOOTER */
+
+/* SIDEMENU */
+
+aside {
+    background-color: var(--main-base);
+    position: absolute;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    width: 250;
+    left: -260px;
+}
+
+aside button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+aside #contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+aside #contact-info span {
+    margin: 0.25rem 0;
+}
+
+aside #profile-photo {
+    width: 128px;
+    border-radius: 50%;
+    margin: 20px 25%;
+}
+
+aside .qrcode {
+    width: 128px;
+    margin: auto;
+}
+
+aside h1 {
+    font-size: 1rem;
+    color: var(--highlight-color);
+}
+
+/*  LAYOUT */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vertically-centred {
+    align-content: center;
+}
+
+.horizontally-centred {
+    justify-content: center;
+}
+
+.flex-in-row {
+    flex-direction: row;
+}
+
+.fr {
+    float: right;
+}
+
+.span-two {
+    grid-column: 1 / span 2;
+}
+
+.last {
+    margin-right: 0;
+}
+
+/* COMPONENTS */
+
+.dot {
+    display: inline-block;
+    align-self: flex-end;
+    width: 12px;
+    height: 12px;
+}
+
+.separator {
+    display: block;
+    height: 12px;
+    width: 100%;
+    background-image: url("../images/separator.png");
+    background-repeat: repeat-x;
+    margin: 20px 0;
+}
+
+.separator-dark {
+    display: block;
+    height: 12px;
+    width: 100%;
+    background-image: url("../images/separator-dark.png");
+    background-repeat: repeat-x;
+    margin: 20px 0;
+}
+
+/* ICONS */
+
+.i-menu {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-menu:hover {
+    background-position: -24px 0;
+}
+
+.i-close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/close.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-logo {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-in {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/in.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-in:hover {
+    background-position: -24px 0;
+}
+
+.i-gh {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/gh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-gh:hover {
+    background-position: -24px 0;
+}
+
+.i-js {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/js.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-html5 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/html5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-django {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/django.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-python {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/python.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.i-sm {
+    width: 12px;
+    height: 12px;
+}
+
+/* COLORS */
+
+.highlight {
+    color:  var(--highlight-color);
+}
+
+.highlight::after {
+    content: "";
+}
+
+/* END COLORS */
+
+/* TEXT STYLES */
+
+.bold {
+    font-weight: bold;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+/* END TEXT STYLES */
+
+/* ANIMATIONS */
+
+.drawing {
+    position: relative;
+    left: 260px;
+    animation-name: draw;
+    animation-duration: 0.2s;
+}
+
+.put-away {
+    position: relative;
+    left: 0px;
+    animation-name: put_away;
+    animation-duration: 0.2s;
+}
+
+@keyframes draw {
+    from {left: 0px;}
+    to {left: 260px;}
+}
+
+@keyframes put_away {
+    from {left: 260px;}
+    to {left: 0px;}
+}

@@ -1,0 +1,104 @@
+/* ICONS */
+
+.i-menu {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-menu:hover {
+    background-position: -24px 0;
+}
+
+.i-close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/close.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-logo {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-in {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/in.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-in:hover {
+    background-position: -24px 0;
+}
+
+.i-gh {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/gh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-gh:hover {
+    background-position: -24px 0;
+}
+
+.i-js {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/js.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-html5 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/html5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-django {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/django.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-python {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/python.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.i-sm {
+    width: 12px;
+    height: 12px;
+}

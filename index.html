@@ -1,0 +1,153 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+    <!-- END FAVICON -->
+    <title>Ignacio Ribas | Desarrollador Front-end</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- END CSS -->
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- END JS -->
+</head>
+<body>
+
+    <!-- ASIDE -->
+
+    <aside id="sidemenu" hidden>
+        <section>
+            <div>
+                <button class="fr" id="put-away-sidebar">
+                    <i class="i-close i-sm"></i>
+                </button>   
+            </div>
+            <div id="personal-photo">
+                <img id="profile-photo" src="assets/images/profile.jpg" alt="perfil">
+            </div>
+            <div class="separator"></div>
+            <div id="contact-info">
+                <span class="highlight bold">Ignacio Ribas Trillo</span>
+                <span class="thin">iribastrillo@gmail.com</span>
+                <span class="thin">091 779 453</span>
+                <div class="separator"></div>
+                <div>
+                    <h1>VCARD</h1>
+                </div>
+                <img class="qrcode" src="assets/images/qr-code.svg" alt="contacto qr">
+            </div>
+            <div class="separator"></div>
+        </section>
+    </aside>
+    
+    <!-- END ASIDE -->
+
+    <header>
+        <!-- NAV MOBILE -->
+        <nav class="mobile">
+            <ul>
+                <li>
+                    <button>
+                        <i class="i-menu"></i>
+                    </button>
+                </li>
+                <li><i class="i-logo"></i></li>
+                <li>
+                    <div>
+                        <a href="https://www.linkedin.com/in/iribastrillo/"><i class="i-in"></i></a>
+                        <a href="https://github.com/iribastrillo"><i class="i-gh"></i></a>    
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+        <!-- END NAV MOBILE -->
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <div>
+                <span>¡Hola! Mi nombre es</span>
+                <h1>Ignacio Ribas</h1>
+                <h2>y soy desarrollador front-end.</h2>
+                <div class="flex-container vertically-centred">
+                    <img class="img-prompt" src="assets/images/prompt-large.png" alt="prompt-large">
+                    <img class="img-cursor" src="assets/images/cursor_large.png" alt="cursor-large">
+                </div>
+                <div class="hero-scroll">
+                </div>
+            </div>
+        </section>
+        <section id="content" hidden>
+            <header>
+                <h1>about.py</h1>
+            </header>
+            <div>
+                <p>Contenido de info</p>
+            </div>
+        </section>
+        <div class="separator-dark"></div>
+        <section>
+            
+        </section>
+        <section id="skills" class="flex-container">
+                <div class="sticker">
+                    <i class="i-js i-lg"></i>
+                    <h2>Javascript</h2>
+                    <div class="separator-dark"></div>
+                </div>
+                <div class="sticker">
+                    <i class="i-html5 i-lg"></i>
+                    <h2>HTML5</h2>
+                    <div class="separator-dark"></div>
+                </div>
+                <div class="sticker">
+                    <i class="i-django i-lg"></i>
+                    <h2>Django</h2>
+                    <div class="separator-dark"></div>
+                </div>
+                <div class="sticker last">
+                    <i class="i-python i-lg"></i>
+                    <h2>Python</h2>
+                    <div class="separator-dark"></div>
+                </div>
+        </section>
+        <div class="separator-dark"></div>
+        <section id="contact">
+            <h1>Contacto</h1>
+            <p>Escribime acá con alguna sugerencia para el sitio o contactame a través de mi información de contacto</p>
+            <div class="separator"></div>
+            <form action="">
+                <div>
+                    <label for="first-name">Nombre</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="span-two">
+                    <label for="message">Mensaje</label>
+                    <input type="text" name="message" id="message">   
+                </div>
+                <div class="flex-in-row horizontally-centred span-two">
+                    <input type="button" value="Enviar">
+                </div>         
+            </form>
+            <div class="separator"></div>
+        </section>
+        <div class="separator-dark"></div>
+        <footer>
+            <p>iribastrillo@gmail.com | <b>Ignacio Ribas</b> | 091779453</p>
+        </footer>
+        <div class="separator-dark"></div>
+    </main>
+    
+</body>
+</html>
