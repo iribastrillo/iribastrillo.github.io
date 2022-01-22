@@ -2,8 +2,9 @@
 
 ## Table of contents
 
-* [Introduction](#Introduction)
-* [Technologies](#Technologies)
+* Introduction
+* Technologies
+* About me
 
 ## Introduction
 
@@ -23,7 +24,7 @@ This project was created with:
 
 I also used Aseprite to make basic graphic assets to design the page and Figma to wireframe it.
 
-## About this project's author
+## About me
 
 I am a frontend developer aspiring to land my first job experience in the industry. I am a professional highschool teacher who taught himself how to code from an
 early age. I have always drawn to webapp development and for that I learned the basic standard technologies and focus on mastering Javascript and Python for frontend
